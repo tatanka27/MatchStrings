@@ -15,6 +15,18 @@ public class Matrix {
         Arrays.fill(isAvailableCols, Boolean.TRUE);
     }
 
+    Integer getItemMatrix(int i, int j) {
+        return matrix[i][j];
+    }
+
+    boolean getItemAvailableRows(int i) {
+        return isAvailableRows[i];
+    }
+
+    boolean getItemAvailableCols(int i) {
+        return isAvailableCols[i];
+    }
+
     void setCount(int i, int j, int count) {
         matrix[i][j] = count;
     }
