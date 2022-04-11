@@ -16,6 +16,8 @@ public class Main {
 
         Lines lines1 = readLines(reader);
         Lines lines2 = readLines(reader);
+        fileReader.close();
+        reader.close();
 
         Matrix matrix = new Matrix(lines1.getLength(), lines2.getLength());
         for (int i = 0; i < lines1.getLength(); i++) {
@@ -52,7 +54,7 @@ public class Main {
             writer.flush();
 
         }
-        System.out.println("");
+        writer.close();
     }
 
     private static Lines readLines(BufferedReader reader) throws IOException {
