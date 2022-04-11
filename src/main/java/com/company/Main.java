@@ -7,11 +7,11 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        File inputFile  = new File("src/com/company/input.text");
+        File inputFile  = new File("src/main/resources/input.text");
         FileReader fileReader = new FileReader(inputFile);
         BufferedReader reader = new BufferedReader(fileReader);
 
-        File outputFile  = new File("src/com/company/output.text");
+        File outputFile  = new File("src/main/resources/output.text");
         FileWriter writer = new FileWriter(outputFile);
 
         Lines lines1 = readLines(reader);
